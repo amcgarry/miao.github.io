@@ -24,6 +24,9 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
+[my photo page](photo.md)
+
+![dodgeball](dodgeball2.jpg)
 
 # Audrey McGarry
 ### Computer Scientist, CEH, CISSP
