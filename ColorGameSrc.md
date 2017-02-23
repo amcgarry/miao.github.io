@@ -1,4 +1,4 @@
-<!doctype html>
+'<!doctype html>
 <html>
 <head>
     <title>My Javascript Color Guessing Game</title>
@@ -90,4 +90,4 @@
 </head>
     <body onload ="do_game()"></body>
 
-</html>
+</html>'
