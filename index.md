@@ -17,9 +17,12 @@ Audrey
 [Link](url) and ![Image](src)
 [my photo page](pictures.md)
 
-[my JavaScript Game](part4new.html)
+[My JavaScript Game](part4new.html)
+[Source for Javascript Game](MatchingGameSrc.md)
 
-[my color guessing game](part2.html)
+[My JavaaScript Color Guessing Game](part2.html)
+[Source for Guessing Game](ColorGameSrc.md)
+
 
 ![dodgeball](dodgeball2.jpg)
 
