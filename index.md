@@ -19,6 +19,8 @@ Audrey
 
 [my JavaScript Game](part4new.html)
 
+[my color guessing game](part2.html)
+
 ![dodgeball](dodgeball2.jpg)
 
 # Audrey McGarry
