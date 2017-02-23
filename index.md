@@ -17,7 +17,7 @@ Audrey
 [Link](url) and ![Image](src)
 [my photo page](pictures.md)
 
-[my JavaScript Game](miao.github.io/part4new.html)
+[my JavaScript Game](part4new.html)
 
 ![dodgeball](dodgeball2.jpg)
 
