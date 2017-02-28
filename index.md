@@ -12,6 +12,8 @@ Audrey
 
 [My JavaaScript Color Guessing Game](part2.html)
 
+[test python](index2.cgi)
+
 
 
 ![dodgeball](dodgeball2.jpg)
