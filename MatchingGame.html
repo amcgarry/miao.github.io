@@ -16,6 +16,7 @@
 <body onload="generateFaces()">
     <script>
         var numberOfFaces = 5;
+	var level = 1;    
         
 
         function generateFaces(){
@@ -29,6 +30,7 @@
                 img.style.top = Math.floor(Math.random()*400) + "px";
                 img.style.left = Math.floor(Math.random()*400) + "px";
                 theLeftSide.appendChild(img);
+		    
                 
             }
             leftSideImages = theLeftSide.cloneNode(true);
@@ -41,11 +43,13 @@
                 theBody.onclick = null;
                 document.getElementById("leftSide").lastChild.onClick = null;
                 deleteFaces();
+		level = 1;    
             } 
 
             theLeftSide.lastChild.onclick = function nextLevel(event){
                 event.stopPropagation();
                 numberOfFaces += 5;
+		level += 1;    
                 deleteFaces();
                 generateFaces();
             }
@@ -70,6 +74,7 @@
 	
 		<h1>Find the Kitty that doesn't belong</h1>
 		<p>To play, click on the extra kitty</p>
+		<p>Level</p>level
 
 		<div id="leftSide"></div>
 		<div id="rightSide"></div>
