@@ -16,13 +16,14 @@
 <body onload="generateFaces()">
     <script>
         var numberOfFaces = 5;
-	var level = 1;    
+	var level = 1;
+    document.getElementById("myLevel").innerHTML=level;    
         
-
         function generateFaces(){
             var theLeftSide = document.getElementById("leftSide"); 
             var theRightSide = document.getElementById("rightSide");
             var theBody = document.getElementsByTagName("body")[0]; 
+            document.getElementById("myLevel").innerHTML=level;
         
             for(var i=0; i<numberOfFaces; i++){
                 img = document.createElement("img");            
@@ -43,38 +44,33 @@
                 theBody.onclick = null;
                 document.getElementById("leftSide").lastChild.onClick = null;
                 deleteFaces();
-		level = 1;    
+		level = 0;    
+        document.getElementById("myLevel").innerHTML=level;
             } 
-
             theLeftSide.lastChild.onclick = function nextLevel(event){
                 event.stopPropagation();
                 numberOfFaces += 5;
-		level += 1;    
+		level += 1;   
+        document.getElementById("myLevel").innerHTML=level; 
                 deleteFaces();
                 generateFaces();
             }
-
         
-
         function deleteFaces(){
             while(theLeftSide.firstChild){
                 theLeftSide.removeChild(theLeftSide.firstChild);}
-
             while(theRightSide.firstChild){
                 theRightSide.removeChild(theRightSide.firstChild);}
-
+                document.getElementById("myLevel").innerHTML=level;
         }
 }
-
-        out.innerHTML=level;
-
         
     </script>
 
 	
 		<h1>Find the Kitty that doesn't belong</h1>
 		<p>To play, click on the extra kitty</p>
-		<p>level</p>
+		<p>level is: <span id="myLevel"></span></p>
 		
 
 
